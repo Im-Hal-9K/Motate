@@ -1,6 +1,6 @@
 /*
   MotateUART.h - UART Library for the Motate system
-  http://tinkerin.gs/
+  http://github.com/synthetos/motate/
 
   Copyright (c) 2013 Robert Giseburt
 
@@ -37,7 +37,7 @@ namespace Motate {
 
 #ifdef __AVR_XMEGA__
 
-#include <Atmel_avr/AvrXUART.h>
+#include <Atmel_XMega/XMegaUART.h>
 
 #else
 

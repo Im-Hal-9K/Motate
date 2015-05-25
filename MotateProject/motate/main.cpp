@@ -48,20 +48,20 @@ extern void loop();
 
 int main(void);
 
+#ifdef __ARM__
+
 #ifdef __cplusplus
 extern "C"{
 #endif // __cplusplus
 
-    // These two routines are defined with C linkage:
+    // These routines are defined with C linkage:
 
-    void _init() __attribute__ ((weak));
     void _init() {
         SystemInit();
     }
 
     void __libc_init_array(void);
 
-    void _start() __attribute__ ((weak));
     void _start() {
         SystemInit();
         __libc_init_array();
@@ -72,6 +72,7 @@ extern "C"{
 }
 #endif // __cplusplus
 
+#endif // __ARM__
 
 /*
  * _system_init()
@@ -79,6 +80,10 @@ extern "C"{
 
 void _system_init(void)
 {
+#ifdef __AVR__
+    SystemInit();
+#endif // __AVR__
+
     Motate::WatchDogTimer.disable();
 }
 

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40A24241AD5F7AB00406A3A /* SamUniqueID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D40A24221AD5F7AB00406A3A /* SamUniqueID.cpp */; };
 		D443391D196BB69B004A48F9 /* buffered_uart_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443391B196BB69B004A48F9 /* buffered_uart_demo.cpp */; };
 		D443391E196BB69B004A48F9 /* buffered_uart_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443391B196BB69B004A48F9 /* buffered_uart_demo.cpp */; };
 		D443391F196BB69B004A48F9 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D443391C196BB69B004A48F9 /* Makefile */; };
 		D4433920196BB69B004A48F9 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D443391C196BB69B004A48F9 /* Makefile */; };
 		D457117C17053EFA00EA19A8 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D457117B17053EFA00EA19A8 /* Makefile */; };
+		D47E9A951ACC532300476AF2 /* XMegaPins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D47E9A941ACC532300476AF2 /* XMegaPins.cpp */; };
 		D48992C61965B460004F73A6 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D48992C41965B460004F73A6 /* Makefile */; };
 		D48992C71965B460004F73A6 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D48992C41965B460004F73A6 /* Makefile */; };
 		D48992C81965B460004F73A6 /* uart_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D48992C51965B460004F73A6 /* uart_demo.cpp */; };
@@ -1260,6 +1262,45 @@
 		D4C7A19D19630FA000A1BE28 /* startup_stm32l053xx.s in Sources */ = {isa = PBXBuildFile; fileRef = D4C79BEE1957C0AD00A1BE28 /* startup_stm32l053xx.s */; };
 		D4C7A19E19630FA000A1BE28 /* stm32f30x_syscfg.c in Sources */ = {isa = PBXBuildFile; fileRef = D4C79AF11957C0AD00A1BE28 /* stm32f30x_syscfg.c */; };
 		D4C7A1AA19638D7500A1BE28 /* KL05ZUART.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C7A1A819638D7500A1BE28 /* KL05ZUART.cpp */; };
+		D4D6453419BA0D4F0053705B /* KL05ZSPI.h in Sources */ = {isa = PBXBuildFile; fileRef = D409A5C919B97241009137D7 /* KL05ZSPI.h */; };
+		D4D6453619BA0D530053705B /* MotateSPI.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F64195201A900A1BE28 /* MotateSPI.h */; };
+		D4D6453719BA0E520053705B /* MKL05Z4.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C797851957C0AC00A1BE28 /* MKL05Z4.h */; };
+		D4DD3EA919BFE1AE0081E1BB /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D4DD3E8319BFE1AE0081E1BB /* Makefile */; };
+		D4DD3EAA19BFE1AE0081E1BB /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D4DD3E8319BFE1AE0081E1BB /* Makefile */; };
+		D4DD3EAB19BFE1AE0081E1BB /* soft_pwm_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4DD3E8419BFE1AE0081E1BB /* soft_pwm_demo.cpp */; };
+		D4DD3EAC19BFE1AE0081E1BB /* soft_pwm_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4DD3E8419BFE1AE0081E1BB /* soft_pwm_demo.cpp */; };
+		D4E913371ABC5D1D0042A16C /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = D457117B17053EFA00EA19A8 /* Makefile */; };
+		D4E913381ABC5D1D0042A16C /* buffered_uart_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443391B196BB69B004A48F9 /* buffered_uart_demo.cpp */; };
+		D4E913391ABC5D1D0042A16C /* uart_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D48992C51965B460004F73A6 /* uart_demo.cpp */; };
+		D4E9133A1ABC5D1D0042A16C /* blink_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C79F23196216A300A1BE28 /* blink_demo.cpp */; };
+		D4E9133B1ABC5D1D0042A16C /* fade_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C79F27196216A300A1BE28 /* fade_demo.cpp */; };
+		D4E9133C1ABC5D1D0042A16C /* soft_pwm_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4DD3E8419BFE1AE0081E1BB /* soft_pwm_demo.cpp */; };
+		D4E9133D1ABC5D1D0042A16C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C79F20195BCC9A00A1BE28 /* main.cpp */; };
+		D4E9133E1ABC5D1D0042A16C /* Motate.mk in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F821957BF8400A1BE28 /* Motate.mk */; };
+		D4E9133F1ABC5D1D0042A16C /* MotateUtilities.mk in Sources */ = {isa = PBXBuildFile; fileRef = D4C79F0F1957C9E700A1BE28 /* MotateUtilities.mk */; };
+		D4E913401ABC5D1D0042A16C /* XMegaPins.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E281ABB54D40042A16C /* XMegaPins.h */; };
+		D4E913411ABC5D1D0042A16C /* XMegaTimers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E291ABB54D40042A16C /* XMegaTimers.cpp */; };
+		D4E913421ABC5D1D0042A16C /* XMegaTimers.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E2A1ABB54D40042A16C /* XMegaTimers.h */; };
+		D4E913431ABC5D1D0042A16C /* XMegaUART.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E2B1ABB54D40042A16C /* XMegaUART.cpp */; };
+		D4E913441ABC5D1D0042A16C /* XMegaUART.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E2C1ABB54D40042A16C /* XMegaUART.h */; };
+		D4E913451ABC5D1D0042A16C /* MotateBuffer.h in Sources */ = {isa = PBXBuildFile; fileRef = D48992C01965B118004F73A6 /* MotateBuffer.h */; };
+		D4E913461ABC5D1D0042A16C /* MotatePins.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F63195201A900A1BE28 /* MotatePins.h */; };
+		D4E913471ABC5D1D0042A16C /* MotateSerial.h in Sources */ = {isa = PBXBuildFile; fileRef = D449BC59197AC3E3000C0C3C /* MotateSerial.h */; };
+		D4E913481ABC5D1D0042A16C /* MotateSPI.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F64195201A900A1BE28 /* MotateSPI.h */; };
+		D4E913491ABC5D1D0042A16C /* MotateTimers.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F65195201A900A1BE28 /* MotateTimers.h */; };
+		D4E9134A1ABC5D1D0042A16C /* MotateUART.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C7A1AB1963B66D00A1BE28 /* MotateUART.h */; };
+		D4E9134B1ABC5D1D0042A16C /* MotateUSB.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F66195201A900A1BE28 /* MotateUSB.h */; };
+		D4E9134C1ABC5D1D0042A16C /* MotateUSBCDC.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F67195201A900A1BE28 /* MotateUSBCDC.h */; };
+		D4E9134D1ABC5D1D0042A16C /* MotateUSBHelpers.h in Sources */ = {isa = PBXBuildFile; fileRef = D4C78F68195201A900A1BE28 /* MotateUSBHelpers.h */; };
+		D4E9134E1ABC5D1D0042A16C /* TinyGv8.mk in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E261ABB3A670042A16C /* TinyGv8.mk */; };
+		D4E9134F1ABC5D1D0042A16C /* motate_pin_assignments.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E2E1ABB5C3B0042A16C /* motate_pin_assignments.h */; };
+		D4E913501ABC5D1D0042A16C /* TinyGv8-pinout.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E90E2F1ABB5C3B0042A16C /* TinyGv8-pinout.h */; };
+		D4E913511ABC5D1D0042A16C /* avr.mk in Sources */ = {isa = PBXBuildFile; fileRef = D4E910B41ABB615D0042A16C /* avr.mk */; };
+		D4E913521ABC5D1D0042A16C /* syscalls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E910B11ABB60550042A16C /* syscalls.cpp */; };
+		D4E913531ABC5D1D0042A16C /* syscalls.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E910B21ABB60550042A16C /* syscalls.h */; };
+		D4E913541ABC5D1D0042A16C /* xmega.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E910B51ABBAD140042A16C /* xmega.cpp */; };
+		D4E913551ABC5D1D0042A16C /* xmega.h in Sources */ = {isa = PBXBuildFile; fileRef = D4E910B61ABBAD140042A16C /* xmega.h */; };
+		D4E913581ABCB58F0042A16C /* xmega_interrupts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E913561ABCB58F0042A16C /* xmega_interrupts.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1281,22 +1322,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D4E913321ABBB2370042A16C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D409A5C919B97241009137D7 /* KL05ZSPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KL05ZSPI.h; path = motate/Freescale_klxx/KL05ZSPI.h; sourceTree = SOURCE_ROOT; };
+		D40A24031ACE2C5A00406A3A /* openocd.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = openocd.cfg; path = motate/openocd.cfg; sourceTree = "<group>"; };
+		D40A24041ACE2CCC00406A3A /* atmel_sam.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = atmel_sam.cfg; sourceTree = "<group>"; };
+		D40A24221AD5F7AB00406A3A /* SamUniqueID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SamUniqueID.cpp; sourceTree = "<group>"; };
+		D40A24231AD5F7AB00406A3A /* SamUniqueID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamUniqueID.h; sourceTree = "<group>"; };
 		D443391B196BB69B004A48F9 /* buffered_uart_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = buffered_uart_demo.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		D443391C196BB69B004A48F9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		D449BC59197AC3E3000C0C3C /* MotateSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotateSerial.h; sourceTree = "<group>"; };
 		D457117B17053EFA00EA19A8 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile; sourceTree = "<group>"; usesTabs = 1; xcLanguageSpecificationIdentifier = xcode.lang.sh; };
+		D47E9A921ACB2CFE00476AF2 /* xmega_stdcpp_stubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmega_stdcpp_stubs.h; sourceTree = "<group>"; };
+		D47E9A941ACC532300476AF2 /* XMegaPins.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMegaPins.cpp; sourceTree = "<group>"; };
 		D48992C01965B118004F73A6 /* MotateBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotateBuffer.h; path = motate/MotateBuffer.h; sourceTree = SOURCE_ROOT; };
 		D48992C41965B460004F73A6 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		D48992C51965B460004F73A6 /* uart_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uart_demo.cpp; sourceTree = "<group>"; };
+		D4A74B2119C15DB00019633A /* frdm-kl05z.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "frdm-kl05z.cfg"; sourceTree = "<group>"; };
 		D4C77F6D1950912300A1BE28 /* Tools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tools.xcodeproj; path = ../Tools/Tools.xcodeproj; sourceTree = "<group>"; };
 		D4C78F54195201A900A1BE28 /* AvrPins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvrPins.h; sourceTree = "<group>"; };
 		D4C78F55195201A900A1BE28 /* AvrTimers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvrTimers.h; sourceTree = "<group>"; };
 		D4C78F56195201A900A1BE28 /* AvrUSB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AvrUSB.cpp; sourceTree = "<group>"; };
 		D4C78F57195201A900A1BE28 /* AvrUSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvrUSB.h; sourceTree = "<group>"; };
-		D4C78F58195201A900A1BE28 /* AvrXPins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvrXPins.h; sourceTree = "<group>"; };
 		D4C78F5A195201A900A1BE28 /* SamCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamCommon.h; sourceTree = "<group>"; };
 		D4C78F5B195201A900A1BE28 /* SamPins.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SamPins.cpp; sourceTree = "<group>"; };
 		D4C78F5C195201A900A1BE28 /* SamPins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SamPins.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1316,7 +1373,7 @@
 		D4C78F7019538E6B00A1BE28 /* KL05ZPins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KL05ZPins.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D4C78F7F19553EF700A1BE28 /* KL05ZTimers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KL05ZTimers.cpp; sourceTree = "<group>"; };
 		D4C78F8019553EF700A1BE28 /* KL05ZTimers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KL05ZTimers.h; sourceTree = "<group>"; };
-		D4C78F821957BF8400A1BE28 /* Motate.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Motate.mk; sourceTree = "<group>"; };
+		D4C78F821957BF8400A1BE28 /* Motate.mk */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Motate.mk; sourceTree = "<group>"; usesTabs = 1; };
 		D4C78F851957C0AA00A1BE28 /* core_cm0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_cm0.h; sourceTree = "<group>"; };
 		D4C78F861957C0AA00A1BE28 /* core_cm0plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_cm0plus.h; sourceTree = "<group>"; };
 		D4C78F871957C0AA00A1BE28 /* core_cm3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_cm3.h; sourceTree = "<group>"; };
@@ -4394,18 +4451,36 @@
 		D4C79F1219588A8600A1BE28 /* arm.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arm.mk; sourceTree = "<group>"; };
 		D4C79F20195BCC9A00A1BE28 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D4C79F23196216A300A1BE28 /* blink_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blink_demo.cpp; sourceTree = "<group>"; };
-		D4C79F24196216A300A1BE28 /* blink_demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blink_demo.h; sourceTree = "<group>"; };
 		D4C79F25196216A300A1BE28 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		D4C79F27196216A300A1BE28 /* fade_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fade_demo.cpp; sourceTree = "<group>"; };
-		D4C79F28196216A300A1BE28 /* fade_demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fade_demo.h; sourceTree = "<group>"; };
 		D4C79F29196216A300A1BE28 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		D4C79F2E19630F7100A1BE28 /* index_sam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = index_sam; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C7A1A419630FA000A1BE28 /* index_sam copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "index_sam copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C7A1A419630FA000A1BE28 /* index_kl05z */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = index_kl05z; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C7A1A819638D7500A1BE28 /* KL05ZUART.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KL05ZUART.cpp; sourceTree = "<group>"; };
 		D4C7A1A919638D7500A1BE28 /* KL05ZUART.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = KL05ZUART.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D4C7A1AB1963B66D00A1BE28 /* MotateUART.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotateUART.h; sourceTree = "<group>"; };
 		D4C7A1AC19649C2200A1BE28 /* ArduinoDue.gdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArduinoDue.gdb; sourceTree = "<group>"; };
 		D4C7A1AD19649C2900A1BE28 /* FRDM-KLxx.gdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "FRDM-KLxx.gdb"; path = "motate/board/FRDM-KLxx.gdb"; sourceTree = SOURCE_ROOT; };
+		D4DD3E8319BFE1AE0081E1BB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		D4DD3E8419BFE1AE0081E1BB /* soft_pwm_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soft_pwm_demo.cpp; sourceTree = "<group>"; };
+		D4E90E261ABB3A670042A16C /* TinyGv8.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TinyGv8.mk; path = motate/board/TinyGv8.mk; sourceTree = SOURCE_ROOT; };
+		D4E90E281ABB54D40042A16C /* XMegaPins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMegaPins.h; sourceTree = "<group>"; };
+		D4E90E291ABB54D40042A16C /* XMegaTimers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMegaTimers.cpp; sourceTree = "<group>"; };
+		D4E90E2A1ABB54D40042A16C /* XMegaTimers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMegaTimers.h; sourceTree = "<group>"; };
+		D4E90E2B1ABB54D40042A16C /* XMegaUART.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMegaUART.cpp; sourceTree = "<group>"; };
+		D4E90E2C1ABB54D40042A16C /* XMegaUART.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMegaUART.h; sourceTree = "<group>"; };
+		D4E90E2E1ABB5C3B0042A16C /* motate_pin_assignments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = motate_pin_assignments.h; sourceTree = "<group>"; };
+		D4E90E2F1ABB5C3B0042A16C /* TinyGv8-pinout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinyGv8-pinout.h"; sourceTree = "<group>"; };
+		D4E910B11ABB60550042A16C /* syscalls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = syscalls.cpp; sourceTree = "<group>"; };
+		D4E910B21ABB60550042A16C /* syscalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syscalls.h; sourceTree = "<group>"; };
+		D4E910B31ABB60550042A16C /* atmel_xmega.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = atmel_xmega.mk; sourceTree = "<group>"; };
+		D4E910B41ABB615D0042A16C /* avr.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = avr.mk; sourceTree = "<group>"; };
+		D4E910B51ABBAD140042A16C /* xmega.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xmega.cpp; sourceTree = "<group>"; };
+		D4E910B61ABBAD140042A16C /* xmega.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmega.h; sourceTree = "<group>"; };
+		D4E913361ABBB2370042A16C /* index_xmega */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = index_xmega; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E913561ABCB58F0042A16C /* xmega_interrupts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xmega_interrupts.cpp; sourceTree = "<group>"; };
+		D4E913571ABCB58F0042A16C /* xmega_interrupts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmega_interrupts.h; sourceTree = "<group>"; };
+		D4FEBFF61B0A657A0042EA32 /* MotateUniqueID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotateUniqueID.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4417,6 +4492,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4C7A19F19630FA000A1BE28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E913311ABBB2370042A16C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4439,11 +4521,13 @@
 			isa = PBXGroup;
 			children = (
 				D457117B17053EFA00EA19A8 /* Makefile */,
+				D40A24031ACE2C5A00406A3A /* openocd.cfg */,
 				D4C79F19195BC80800A1BE28 /* demos */,
 				D4C78F52195201A900A1BE28 /* motate */,
 				D4C77F6D1950912300A1BE28 /* Tools.xcodeproj */,
 				D4C79F2E19630F7100A1BE28 /* index_sam */,
-				D4C7A1A419630FA000A1BE28 /* index_sam copy */,
+				D4C7A1A419630FA000A1BE28 /* index_kl05z */,
+				D4E913361ABBB2370042A16C /* index_xmega */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4472,10 +4556,12 @@
 				D4C78F53195201A900A1BE28 /* Atmel_avr */,
 				D4C78F59195201A900A1BE28 /* Atmel_sam3xa */,
 				D4C78F6E19538E6B00A1BE28 /* Freescale_klxx */,
+				D4E90E271ABB54D40042A16C /* Atmel_XMega */,
 				D48992C01965B118004F73A6 /* MotateBuffer.h */,
 				D4C78F63195201A900A1BE28 /* MotatePins.h */,
 				D449BC59197AC3E3000C0C3C /* MotateSerial.h */,
 				D4C78F64195201A900A1BE28 /* MotateSPI.h */,
+				D4FEBFF61B0A657A0042EA32 /* MotateUniqueID.h */,
 				D4C78F65195201A900A1BE28 /* MotateTimers.h */,
 				D4C7A1AB1963B66D00A1BE28 /* MotateUART.h */,
 				D4C78F66195201A900A1BE28 /* MotateUSB.h */,
@@ -4496,7 +4582,6 @@
 				D4C78F55195201A900A1BE28 /* AvrTimers.h */,
 				D4C78F56195201A900A1BE28 /* AvrUSB.cpp */,
 				D4C78F57195201A900A1BE28 /* AvrUSB.h */,
-				D4C78F58195201A900A1BE28 /* AvrXPins.h */,
 			);
 			path = Atmel_avr;
 			sourceTree = "<group>";
@@ -4504,6 +4589,8 @@
 		D4C78F59195201A900A1BE28 /* Atmel_sam3xa */ = {
 			isa = PBXGroup;
 			children = (
+				D40A24221AD5F7AB00406A3A /* SamUniqueID.cpp */,
+				D40A24231AD5F7AB00406A3A /* SamUniqueID.h */,
 				D4C78F5A195201A900A1BE28 /* SamCommon.h */,
 				D4C78F5B195201A900A1BE28 /* SamPins.cpp */,
 				D4C78F5C195201A900A1BE28 /* SamPins.h */,
@@ -4520,12 +4607,13 @@
 		D4C78F6E19538E6B00A1BE28 /* Freescale_klxx */ = {
 			isa = PBXGroup;
 			children = (
-				D4C7A1A819638D7500A1BE28 /* KL05ZUART.cpp */,
-				D4C7A1A919638D7500A1BE28 /* KL05ZUART.h */,
 				D4C78F6F19538E6B00A1BE28 /* KL05ZPins.cpp */,
 				D4C78F7019538E6B00A1BE28 /* KL05ZPins.h */,
+				D409A5C919B97241009137D7 /* KL05ZSPI.h */,
 				D4C78F7F19553EF700A1BE28 /* KL05ZTimers.cpp */,
 				D4C78F8019553EF700A1BE28 /* KL05ZTimers.h */,
+				D4C7A1A819638D7500A1BE28 /* KL05ZUART.cpp */,
+				D4C7A1A919638D7500A1BE28 /* KL05ZUART.h */,
 			);
 			path = Freescale_klxx;
 			sourceTree = "<group>";
@@ -9787,6 +9875,8 @@
 			children = (
 				D4C79EE01957C0B700A1BE28 /* atmel_sam */,
 				D4C79EF11957C0B700A1BE28 /* atmel_sam.mk */,
+				D4E910B01ABB60550042A16C /* atmel_xmega */,
+				D4E910B31ABB60550042A16C /* atmel_xmega.mk */,
 				D4C79EF21957C0B700A1BE28 /* freescale_klxx */,
 				D4C79EF91957C0B700A1BE28 /* freescale_klxx.mk */,
 			);
@@ -9797,6 +9887,7 @@
 			isa = PBXGroup;
 			children = (
 				D4C79EE21957C0B700A1BE28 /* atmel_sam_series.mk */,
+				D40A24041ACE2CCC00406A3A /* atmel_sam.cfg */,
 				D4C79EE81957C0B700A1BE28 /* cortex_handlers.c */,
 				D4C79EE91957C0B700A1BE28 /* gcc_flash.ld */,
 				D4C79EEA1957C0B700A1BE28 /* gcc_sram.ld */,
@@ -9827,7 +9918,10 @@
 				D4C79F071957C24700A1BE28 /* ArduinoDue */,
 				D4C7A1AD19649C2900A1BE28 /* FRDM-KLxx.gdb */,
 				D4C79F0E1957C2A100A1BE28 /* FRDM-KLxx.mk */,
+				D4A74B2119C15DB00019633A /* frdm-kl05z.cfg */,
 				D4C79F0A1957C24700A1BE28 /* FRDM-KLxx */,
+				D4E90E261ABB3A670042A16C /* TinyGv8.mk */,
+				D4E90E2D1ABB5C3B0042A16C /* TinyGv8 */,
 			);
 			path = board;
 			sourceTree = "<group>";
@@ -9854,6 +9948,7 @@
 			isa = PBXGroup;
 			children = (
 				D4C79F1219588A8600A1BE28 /* arm.mk */,
+				D4E910B41ABB615D0042A16C /* avr.mk */,
 			);
 			path = arch;
 			sourceTree = "<group>";
@@ -9865,6 +9960,7 @@
 				D48992C21965B460004F73A6 /* uart */,
 				D4C79F22196216A300A1BE28 /* blink */,
 				D4C79F26196216A300A1BE28 /* fade */,
+				D4DD3E5D19BFE1AE0081E1BB /* soft_pwm */,
 			);
 			path = demos;
 			sourceTree = "<group>";
@@ -9873,7 +9969,6 @@
 			isa = PBXGroup;
 			children = (
 				D4C79F23196216A300A1BE28 /* blink_demo.cpp */,
-				D4C79F24196216A300A1BE28 /* blink_demo.h */,
 				D4C79F25196216A300A1BE28 /* Makefile */,
 			);
 			path = blink;
@@ -9883,15 +9978,73 @@
 			isa = PBXGroup;
 			children = (
 				D4C79F27196216A300A1BE28 /* fade_demo.cpp */,
-				D4C79F28196216A300A1BE28 /* fade_demo.h */,
 				D4C79F29196216A300A1BE28 /* Makefile */,
 			);
 			path = fade;
 			sourceTree = "<group>";
 		};
+		D4DD3E5D19BFE1AE0081E1BB /* soft_pwm */ = {
+			isa = PBXGroup;
+			children = (
+				D4DD3E8419BFE1AE0081E1BB /* soft_pwm_demo.cpp */,
+				D4DD3E8319BFE1AE0081E1BB /* Makefile */,
+			);
+			path = soft_pwm;
+			sourceTree = "<group>";
+		};
+		D4E90E271ABB54D40042A16C /* Atmel_XMega */ = {
+			isa = PBXGroup;
+			children = (
+				D47E9A941ACC532300476AF2 /* XMegaPins.cpp */,
+				D4E90E281ABB54D40042A16C /* XMegaPins.h */,
+				D4E90E291ABB54D40042A16C /* XMegaTimers.cpp */,
+				D4E90E2A1ABB54D40042A16C /* XMegaTimers.h */,
+				D4E90E2B1ABB54D40042A16C /* XMegaUART.cpp */,
+				D4E90E2C1ABB54D40042A16C /* XMegaUART.h */,
+			);
+			path = Atmel_XMega;
+			sourceTree = "<group>";
+		};
+		D4E90E2D1ABB5C3B0042A16C /* TinyGv8 */ = {
+			isa = PBXGroup;
+			children = (
+				D4E90E2E1ABB5C3B0042A16C /* motate_pin_assignments.h */,
+				D4E90E2F1ABB5C3B0042A16C /* TinyGv8-pinout.h */,
+			);
+			path = TinyGv8;
+			sourceTree = "<group>";
+		};
+		D4E910B01ABB60550042A16C /* atmel_xmega */ = {
+			isa = PBXGroup;
+			children = (
+				D4E910B11ABB60550042A16C /* syscalls.cpp */,
+				D4E910B21ABB60550042A16C /* syscalls.h */,
+				D4E910B51ABBAD140042A16C /* xmega.cpp */,
+				D4E910B61ABBAD140042A16C /* xmega.h */,
+				D47E9A921ACB2CFE00476AF2 /* xmega_stdcpp_stubs.h */,
+				D4E913561ABCB58F0042A16C /* xmega_interrupts.cpp */,
+				D4E913571ABCB58F0042A16C /* xmega_interrupts.h */,
+			);
+			path = atmel_xmega;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
+		D40A24051ACF384800406A3A /* Motate XMega buffered_uart */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) VERBOSE=1 USE_LTO=1 COLOR=0 BOARD=TinyGv8";
+			buildConfigurationList = D40A24061ACF384800406A3A /* Build configuration list for PBXLegacyTarget "Motate XMega buffered_uart" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ./demos/buffered_uart;
+			dependencies = (
+			);
+			name = "Motate XMega buffered_uart";
+			passBuildSettingsInEnvironment = 1;
+			productName = g3_due;
+		};
 		D45710C21705330C00EA19A8 /* Motate Due uart */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) VERBOSE=1 COLOR=0 BOARD=Due";
@@ -9903,6 +10056,20 @@
 			dependencies = (
 			);
 			name = "Motate Due uart";
+			passBuildSettingsInEnvironment = 1;
+			productName = g3_due;
+		};
+		D4A74B2319C167020019633A /* Motate Due soft_pwm */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) VERBOSE=1 COLOR=0 BOARD=Due";
+			buildConfigurationList = D4A74B2419C167020019633A /* Build configuration list for PBXLegacyTarget "Motate Due soft_pwm" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ./demos/soft_pwm;
+			dependencies = (
+			);
+			name = "Motate Due soft_pwm";
 			passBuildSettingsInEnvironment = 1;
 			productName = g3_due;
 		};
@@ -9948,6 +10115,48 @@
 			passBuildSettingsInEnvironment = 1;
 			productName = g3_due;
 		};
+		D4DD3EAD19BFE35F0081E1BB /* Motate FRDM-KL05Z soft_pwm */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) VERBOSE=1 COLOR=0 BOARD=FRDM-KL05Z";
+			buildConfigurationList = D4DD3EAE19BFE35F0081E1BB /* Build configuration list for PBXLegacyTarget "Motate FRDM-KL05Z soft_pwm" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ./demos/soft_pwm;
+			dependencies = (
+			);
+			name = "Motate FRDM-KL05Z soft_pwm";
+			passBuildSettingsInEnvironment = 1;
+			productName = g3_due;
+		};
+		D4E90E211ABB39D20042A16C /* Motate XMega blink */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) VERBOSE=1 USE_LTO=1 COLOR=0 BOARD=TinyGv8";
+			buildConfigurationList = D4E90E221ABB39D20042A16C /* Build configuration list for PBXLegacyTarget "Motate XMega blink" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ./demos/blink;
+			dependencies = (
+			);
+			name = "Motate XMega blink";
+			passBuildSettingsInEnvironment = 1;
+			productName = g3_due;
+		};
+		D4E913591AC0891B0042A16C /* Motate XMega soft_pwm */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) VERBOSE=1 USE_LTO=1 COLOR=0 BOARD=TinyGv8";
+			buildConfigurationList = D4E9135A1AC0891B0042A16C /* Build configuration list for PBXLegacyTarget "Motate XMega soft_pwm" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ./demos/soft_pwm;
+			dependencies = (
+			);
+			name = "Motate XMega soft_pwm";
+			passBuildSettingsInEnvironment = 1;
+			productName = g3_due;
+		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
@@ -9982,7 +10191,24 @@
 			);
 			name = index_kl05z;
 			productName = index;
-			productReference = D4C7A1A419630FA000A1BE28 /* index_sam copy */;
+			productReference = D4C7A1A419630FA000A1BE28 /* index_kl05z */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4E910B71ABBB2370042A16C /* index_xmega */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E913331ABBB2370042A16C /* Build configuration list for PBXNativeTarget "index_xmega" */;
+			buildPhases = (
+				D4E910B81ABBB2370042A16C /* Sources */,
+				D4E913311ABBB2370042A16C /* Frameworks */,
+				D4E913321ABBB2370042A16C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = index_xmega;
+			productName = index;
+			productReference = D4E913361ABBB2370042A16C /* index_xmega */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -9991,7 +10217,7 @@
 		D45710B8170532AC00EA19A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Rob Giseburt";
 			};
 			buildConfigurationList = D45710BB170532AC00EA19A8 /* Build configuration list for PBXProject "Motate" */;
@@ -10014,10 +10240,16 @@
 			targets = (
 				D45710C21705330C00EA19A8 /* Motate Due uart */,
 				D4D4A02F197CD7B400618EF3 /* Motate Due buffered_uart */,
+				D4A74B2319C167020019633A /* Motate Due soft_pwm */,
+				D4DD3EAD19BFE35F0081E1BB /* Motate FRDM-KL05Z soft_pwm */,
 				D4C78F731954DFAF00A1BE28 /* Motate FRDM-KL05Z uart */,
 				D4C4EF7E196DB49D00D1F791 /* Motate FRDM-KL05Z buffered_uart */,
+				D4E90E211ABB39D20042A16C /* Motate XMega blink */,
+				D4E913591AC0891B0042A16C /* Motate XMega soft_pwm */,
+				D40A24051ACF384800406A3A /* Motate XMega buffered_uart */,
 				D457112317053BFB00EA19A8 /* index_sam */,
 				D4C79F2F19630FA000A1BE28 /* index_kl05z */,
+				D4E910B71ABBB2370042A16C /* index_xmega */,
 			);
 		};
 /* End PBXProject section */
@@ -10427,6 +10659,7 @@
 				D4C79DD71957C0AE00A1BE28 /* stm32f0xx_hal_i2s.c in Sources */,
 				D4C79CB51957C0AE00A1BE28 /* cmsis_nvic.c in Sources */,
 				D4C79E861957C0AE00A1BE28 /* stm32l0xx_hal_rcc.c in Sources */,
+				D4DD3EAB19BFE1AE0081E1BB /* soft_pwm_demo.cpp in Sources */,
 				D4C79C871957C0AD00A1BE28 /* system_sam3s.c in Sources */,
 				D4C79D4C1957C0AE00A1BE28 /* stm32f10x_rcc.c in Sources */,
 				D4C79EAE1957C0AE00A1BE28 /* stm32l1xx_pwr.c in Sources */,
@@ -10460,6 +10693,7 @@
 				D4C79D1C1957C0AE00A1BE28 /* system_LPC8xx.c in Sources */,
 				D4C79D891957C0AE00A1BE28 /* stm32f4xx_hal_irda.c in Sources */,
 				D4C79CF01957C0AE00A1BE28 /* startup_LPC15xx.s in Sources */,
+				D4DD3EA919BFE1AE0081E1BB /* Makefile in Sources */,
 				D4C79DA11957C0AE00A1BE28 /* stm32f4xx_hal_wwdg.c in Sources */,
 				D4C79D2C1957C0AE00A1BE28 /* stm32f0xx_flash.c in Sources */,
 				D4C79D411957C0AE00A1BE28 /* stm32f10x_crc.c in Sources */,
@@ -10509,6 +10743,7 @@
 				D4C79DEC1957C0AE00A1BE28 /* stm32f0xx_hal_wwdg.c in Sources */,
 				D4C79DA01957C0AE00A1BE28 /* stm32f4xx_hal_usart.c in Sources */,
 				D4C79E271957C0AE00A1BE28 /* stm32f30x_wwdg.c in Sources */,
+				D40A24241AD5F7AB00406A3A /* SamUniqueID.cpp in Sources */,
 				D4C79ED11957C0AE00A1BE28 /* stm32f30x_tim.c in Sources */,
 				D4C79DC91957C0AE00A1BE28 /* stm32f0xx_hal_can.c in Sources */,
 				D4C79DF11957C0AE00A1BE28 /* sys.cpp in Sources */,
@@ -10664,15 +10899,18 @@
 				D4C79F3219630FA000A1BE28 /* stm32f30x_tim.c in Sources */,
 				D4C79F3319630FA000A1BE28 /* stm32l0xx_hal_smartcard_ex.c in Sources */,
 				D4C79F3419630FA000A1BE28 /* stm32f4xx_hal_tim.c in Sources */,
+				D4D6453719BA0E520053705B /* MKL05Z4.h in Sources */,
 				D4C79F3519630FA000A1BE28 /* stm32f4xx_hal_dac.c in Sources */,
 				D4C79F3619630FA000A1BE28 /* startup_sam4l.c in Sources */,
 				D4C79F3719630FA000A1BE28 /* startup_sam3n.c in Sources */,
 				D4C79F3819630FA000A1BE28 /* sys.cpp in Sources */,
+				D4D6453419BA0D4F0053705B /* KL05ZSPI.h in Sources */,
 				D4C79F3919630FA000A1BE28 /* stm32f4xx_hal_usart.c in Sources */,
 				D4C79F3A19630FA000A1BE28 /* startup_MKL25Z4.s in Sources */,
 				D4C79F3B19630FA000A1BE28 /* stm32f4xx_hal_crc.c in Sources */,
 				D4C79F3C19630FA000A1BE28 /* vector_table.s in Sources */,
 				D4C79F3D19630FA000A1BE28 /* stm32f0xx_comp.c in Sources */,
+				D4D6453619BA0D530053705B /* MotateSPI.h in Sources */,
 				D4C79F3E19630FA000A1BE28 /* sys.cpp in Sources */,
 				D4C79F3F19630FA000A1BE28 /* stm32f30x_usart.c in Sources */,
 				D4C79F4019630FA000A1BE28 /* stm32l1xx_rtc.c in Sources */,
@@ -11060,6 +11298,7 @@
 				D4C7A0BC19630FA000A1BE28 /* cmsis_nvic.c in Sources */,
 				D4C7A0BD19630FA000A1BE28 /* stm32l0xx_hal_rcc.c in Sources */,
 				D4C7A0BE19630FA000A1BE28 /* system_sam3s.c in Sources */,
+				D4DD3EAC19BFE1AE0081E1BB /* soft_pwm_demo.cpp in Sources */,
 				D4C7A0BF19630FA000A1BE28 /* stm32f10x_rcc.c in Sources */,
 				D4C7A0C019630FA000A1BE28 /* stm32l1xx_pwr.c in Sources */,
 				D4C7A0C119630FA000A1BE28 /* stm32f4xx_hal_nor.c in Sources */,
@@ -11198,6 +11437,7 @@
 				D4C7A14519630FA000A1BE28 /* stm32f0xx_gpio.c in Sources */,
 				D4C7A14619630FA000A1BE28 /* stm32l1xx_lcd.c in Sources */,
 				D4C7A14719630FA000A1BE28 /* startup_STM32F40x.s in Sources */,
+				D4DD3EAA19BFE1AE0081E1BB /* Makefile in Sources */,
 				D4C7A14819630FA000A1BE28 /* stm32f10x_tim.c in Sources */,
 				D4C7A14919630FA000A1BE28 /* startup_stm32f401xe.s in Sources */,
 				D4C7A14A19630FA000A1BE28 /* sys.cpp in Sources */,
@@ -11290,12 +11530,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4E910B81ABBB2370042A16C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E913371ABC5D1D0042A16C /* Makefile in Sources */,
+				D47E9A951ACC532300476AF2 /* XMegaPins.cpp in Sources */,
+				D4E913381ABC5D1D0042A16C /* buffered_uart_demo.cpp in Sources */,
+				D4E913391ABC5D1D0042A16C /* uart_demo.cpp in Sources */,
+				D4E9133A1ABC5D1D0042A16C /* blink_demo.cpp in Sources */,
+				D4E9133B1ABC5D1D0042A16C /* fade_demo.cpp in Sources */,
+				D4E9133C1ABC5D1D0042A16C /* soft_pwm_demo.cpp in Sources */,
+				D4E9133D1ABC5D1D0042A16C /* main.cpp in Sources */,
+				D4E9133E1ABC5D1D0042A16C /* Motate.mk in Sources */,
+				D4E9133F1ABC5D1D0042A16C /* MotateUtilities.mk in Sources */,
+				D4E913401ABC5D1D0042A16C /* XMegaPins.h in Sources */,
+				D4E913411ABC5D1D0042A16C /* XMegaTimers.cpp in Sources */,
+				D4E913421ABC5D1D0042A16C /* XMegaTimers.h in Sources */,
+				D4E913431ABC5D1D0042A16C /* XMegaUART.cpp in Sources */,
+				D4E913441ABC5D1D0042A16C /* XMegaUART.h in Sources */,
+				D4E913451ABC5D1D0042A16C /* MotateBuffer.h in Sources */,
+				D4E913461ABC5D1D0042A16C /* MotatePins.h in Sources */,
+				D4E913471ABC5D1D0042A16C /* MotateSerial.h in Sources */,
+				D4E913481ABC5D1D0042A16C /* MotateSPI.h in Sources */,
+				D4E913491ABC5D1D0042A16C /* MotateTimers.h in Sources */,
+				D4E9134A1ABC5D1D0042A16C /* MotateUART.h in Sources */,
+				D4E913581ABCB58F0042A16C /* xmega_interrupts.cpp in Sources */,
+				D4E9134B1ABC5D1D0042A16C /* MotateUSB.h in Sources */,
+				D4E9134C1ABC5D1D0042A16C /* MotateUSBCDC.h in Sources */,
+				D4E9134D1ABC5D1D0042A16C /* MotateUSBHelpers.h in Sources */,
+				D4E9134E1ABC5D1D0042A16C /* TinyGv8.mk in Sources */,
+				D4E9134F1ABC5D1D0042A16C /* motate_pin_assignments.h in Sources */,
+				D4E913501ABC5D1D0042A16C /* TinyGv8-pinout.h in Sources */,
+				D4E913511ABC5D1D0042A16C /* avr.mk in Sources */,
+				D4E913521ABC5D1D0042A16C /* syscalls.cpp in Sources */,
+				D4E913531ABC5D1D0042A16C /* syscalls.h in Sources */,
+				D4E913541ABC5D1D0042A16C /* xmega.cpp in Sources */,
+				D4E913551ABC5D1D0042A16C /* xmega.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D40A24071ACF384800406A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate XMega buffered_uart";
+			};
+			name = Debug;
+		};
+		D40A24081ACF384800406A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate XMega buffered_uart";
+			};
+			name = Release;
+		};
 		D45710BD170532AC00EA19A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -11344,6 +11641,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"$(SRCROOT)/motate/Atmel_sam3xa\" \"$(SRCROOT)/motate/cmsis/TARGET_Atmel\" \"$(SRCROOT)/motate/cmsis/TARGET_Atmel/sam3xa\" \"$(SRCROOT)/motate/platform/ateml_sam\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/motate\"",
@@ -11380,6 +11682,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"$(SRCROOT)/motate/Atmel_sam3xa\" \"$(SRCROOT)/motate/cmsis/TARGET_Atmel\" \"$(SRCROOT)/motate/cmsis/TARGET_Atmel/sam3xa\" \"$(SRCROOT)/motate/platform/ateml_sam\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/motate\"",
@@ -11396,11 +11703,27 @@
 			};
 			name = Release;
 		};
+		D4A74B2519C167020019633A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate Due uart copy";
+			};
+			name = Debug;
+		};
+		D4A74B2619C167020019633A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate Due uart copy";
+			};
+			name = Release;
+		};
 		D4C4EF80196DB49D00D1F791 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
-				PRODUCT_NAME = "Motate FRDM-KL05Z copy";
+				PRODUCT_NAME = "Motate FRDM-KL05Z bufffered_uart";
 			};
 			name = Debug;
 		};
@@ -11408,7 +11731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
-				PRODUCT_NAME = "Motate FRDM-KL05Z copy";
+				PRODUCT_NAME = "Motate FRDM-KL05Z bufffered_uart";
 			};
 			name = Release;
 		};
@@ -11416,7 +11739,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
-				PRODUCT_NAME = "Motate FRDM-KL05Z";
+				PRODUCT_NAME = "Motate FRDM-KL05Z uart";
 			};
 			name = Debug;
 		};
@@ -11424,7 +11747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
-				PRODUCT_NAME = "Motate FRDM-KL05Z";
+				PRODUCT_NAME = "Motate FRDM-KL05Z uart";
 			};
 			name = Release;
 		};
@@ -11453,6 +11776,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"$(SRCROOT)/motate/Freescale_klxx\" \"$(SRCROOT)/motate/cmsis/TARGET_Freescale/TARGET_KLXX/TARGET_KL05Z\" \"$(SRCROOT)/motate/platform/freescale_klxx\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/motate\"",
@@ -11465,7 +11793,7 @@
 					"-Imotate",
 					"-DXCODE_INDEX",
 				);
-				PRODUCT_NAME = "index_sam copy";
+				PRODUCT_NAME = index_kl05z;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -11489,6 +11817,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"$(SRCROOT)/motate/Freescale_klxx\" \"$(SRCROOT)/motate/cmsis/TARGET_Freescale/TARGET_KLXX/TARGET_KL05Z\" \"$(SRCROOT)/motate/platform/freescale_klxx\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/motate\"",
@@ -11500,7 +11833,7 @@
 					"-Imotate",
 					"-DXCODE_INDEX",
 				);
-				PRODUCT_NAME = "index_sam copy";
+				PRODUCT_NAME = index_kl05z;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -11521,9 +11854,183 @@
 			};
 			name = Release;
 		};
+		D4DD3EAF19BFE35F0081E1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate FRDM-KL05Z soft_pwm";
+			};
+			name = Debug;
+		};
+		D4DD3EB019BFE35F0081E1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate FRDM-KL05Z soft_pwm";
+			};
+			name = Release;
+		};
+		D4E90E231ABB39D20042A16C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate XMega blink";
+			};
+			name = Debug;
+		};
+		D4E90E241ABB39D20042A16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate XMega blink";
+			};
+			name = Release;
+		};
+		D4E913341ABBB2370042A16C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"\"$(SRCROOT)/motate/Atmel_XMega\"",
+					"\"$(SRCROOT)/motate/platform/atmel_xmega\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/include\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/avr/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"\"$(SRCROOT)/motate/Atmel_XMega\"",
+					"\"$(SRCROOT)/motate/platform/atmel_xmega\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/include\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/avr/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DAVR",
+					"-D__AVR=1",
+					"-D__AVR_XMEGA__=1",
+					"-D__AVR_ATxmega192A3__=1",
+					"-D__AVR_ATxmega192A3__=1",
+					"-D__AVR_DEVICE_NAME__=atxmega192a3",
+					"-D__AVR_ARCH__=106",
+					"-D__WITH_AVRLIBC__=1",
+					"-Imotate",
+					"-D__CLOCK_EXTERNAL_16MHZ",
+					"-DF_CPU=32000000UL",
+					"-DXCODE_INDEX",
+				);
+				PRODUCT_NAME = index_xmega;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4E913351ABBB2370042A16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"\"$(SRCROOT)/motate/Atmel_XMega\"",
+					"\"$(SRCROOT)/motate/platform/atmel_xmega\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/include\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/avr/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/motate\"",
+					"\"$(SRCROOT)/motate/Atmel_XMega\"",
+					"\"$(SRCROOT)/motate/platform/atmel_xmega\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/include\"",
+					"\"$(SRCROOT)/../Tools/gcc-avr/avr/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-DAVR",
+					"-D__AVR=1",
+					"-D__AVR_XMEGA__=1",
+					"-D__AVR_ATxmega192A3__=1",
+					"-D__AVR_ATxmega192A3__=1",
+					"-D__AVR_DEVICE_NAME__=atxmega192a3",
+					"-D__AVR_ARCH__=106",
+					"-D__WITH_AVRLIBC__=1",
+					"-Imotate",
+					"-D__CLOCK_EXTERNAL_16MHZ",
+					"-DF_CPU=32000000UL",
+					"-DXCODE_INDEX",
+				);
+				PRODUCT_NAME = index_xmega;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4E9135B1AC0891B0042A16C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate XMega soft_pwm";
+			};
+			name = Debug;
+		};
+		D4E9135C1AC0891B0042A16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PRODUCT_NAME = "Motate XMega soft_pwm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D40A24061ACF384800406A3A /* Build configuration list for PBXLegacyTarget "Motate XMega buffered_uart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40A24071ACF384800406A3A /* Debug */,
+				D40A24081ACF384800406A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D45710BB170532AC00EA19A8 /* Build configuration list for PBXProject "Motate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -11547,6 +12054,15 @@
 			buildConfigurations = (
 				D457112B17053BFB00EA19A8 /* Debug */,
 				D457112C17053BFB00EA19A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A74B2419C167020019633A /* Build configuration list for PBXLegacyTarget "Motate Due soft_pwm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A74B2519C167020019633A /* Debug */,
+				D4A74B2619C167020019633A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -11583,6 +12099,42 @@
 			buildConfigurations = (
 				D4D4A031197CD7B400618EF3 /* Debug */,
 				D4D4A032197CD7B400618EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DD3EAE19BFE35F0081E1BB /* Build configuration list for PBXLegacyTarget "Motate FRDM-KL05Z soft_pwm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DD3EAF19BFE35F0081E1BB /* Debug */,
+				D4DD3EB019BFE35F0081E1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E90E221ABB39D20042A16C /* Build configuration list for PBXLegacyTarget "Motate XMega blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E90E231ABB39D20042A16C /* Debug */,
+				D4E90E241ABB39D20042A16C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E913331ABBB2370042A16C /* Build configuration list for PBXNativeTarget "index_xmega" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E913341ABBB2370042A16C /* Debug */,
+				D4E913351ABBB2370042A16C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E9135A1AC0891B0042A16C /* Build configuration list for PBXLegacyTarget "Motate XMega soft_pwm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E9135B1AC0891B0042A16C /* Debug */,
+				D4E9135C1AC0891B0042A16C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

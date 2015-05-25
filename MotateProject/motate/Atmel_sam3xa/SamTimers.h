@@ -1,6 +1,6 @@
 /*
  utility/SamTimers.h - Library for the Arduino-compatible Motate system
- http://tinkerin.gs/
+ http://github.com/synthetos/motate/
 
  Copyright (c) 2013 Robert Giseburt
 
@@ -75,12 +75,16 @@ namespace Motate {
         /* Waveform select, Up to 0xFFFFFFFF */
         kTimerUp            = TC_CMR_WAVE | TC_CMR_WAVSEL_UP,
         /* Waveform select, Up to TOP (RC) */
+        kTimerUpToTop       = TC_CMR_WAVE | TC_CMR_WAVSEL_UP_RC,
+        /* Keep the "ToMatch" naming for compatibility */
         kTimerUpToMatch     = TC_CMR_WAVE | TC_CMR_WAVSEL_UP_RC,
         /* For PWM, we'll alias kTimerUpToMatch as: */
         kPWMLeftAligned     = TC_CMR_WAVE | TC_CMR_WAVSEL_UP_RC,
         /* Waveform select, Up to 0xFFFFFFFF, then Down */
         kTimerUpDown        = TC_CMR_WAVE | TC_CMR_WAVSEL_UPDOWN,
         /* Waveform select, Up to TOP (RC), then Down */
+        kTimerUpDownToTop   = TC_CMR_WAVE | TC_CMR_WAVSEL_UPDOWN_RC,
+        /* Keep the "ToMatch" naming for compatibility */
         kTimerUpDownToMatch = TC_CMR_WAVE | TC_CMR_WAVSEL_UPDOWN_RC,
         /* For PWM, we'll alias kTimerUpDownToMatch as: */
         kPWMCenterAligned     = kTimerUpDownToMatch,
@@ -153,6 +157,8 @@ namespace Motate {
         static const IRQn_Type tcIRQ();
 
         typedef SamCommon< Timer<timerNum> > common;
+
+        static const bool has_channel_interrupts = false;
 
         /********************************************************************
          **                          WARNING                                **
@@ -472,8 +478,8 @@ namespace Motate {
          TC_SR_MTIOB   (TC_SR) TIOB Mirror
          */
 
-        
-	static TimerChannelInterruptOptions getInterruptCause(int16_t &channel) {
+
+        static TimerChannelInterruptOptions getInterruptCause(int16_t &channel) {
             uint32_t sr = tcChan()->TC_SR;
             // if it is either an overflow or a RC compare
             if (sr & (TC_SR_COVFS | TC_SR_CPCS)) {
@@ -558,8 +564,8 @@ namespace Motate {
 
     template<uint8_t timerNum, uint8_t channelNum>
     struct TimerChannel : Timer<timerNum> {
-	TimerChannel() : Timer<timerNum>{} {};
-	TimerChannel(const TimerMode mode, const uint32_t freq) : Timer<timerNum>{mode, freq} {};
+        TimerChannel() : Timer<timerNum>{} {};
+        TimerChannel(const TimerMode mode, const uint32_t freq) : Timer<timerNum>{mode, freq} {};
 
         void setDutyCycle(const float ratio) {
             Timer<timerNum>::setDutyCycleForChannel(channelNum, ratio);
@@ -580,6 +586,10 @@ namespace Motate {
         void stopPWMOutput() {
             Timer<timerNum>::stopPWMOutput(channelNum);
         }
+
+        void setInterrupts(const uint32_t interrupts) {
+            Timer<timerNum>::setInterrupts(interrupts, channelNum);
+        };
 
         // Placeholder for user code.
         static void interrupt() __attribute__ ((weak));
@@ -923,84 +933,84 @@ namespace Motate {
     template<> inline PwmCh_num * const PWMTimer<1>::pwmChan()       { return PWM->PWM_CH_NUM + 1; };
     template<> inline const uint32_t    PWMTimer<1>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<1>::pwmIRQ()        { return PWM_IRQn; };
-    
+
     template<> inline Pwm * const       PWMTimer<2>::pwm()           { return PWM; };
     template<> inline PwmCh_num * const PWMTimer<2>::pwmChan()       { return PWM->PWM_CH_NUM + 2; };
     template<> inline const uint32_t    PWMTimer<2>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<2>::pwmIRQ()        { return PWM_IRQn; };
-    
+
     template<> inline Pwm * const       PWMTimer<3>::pwm()           { return PWM; };
     template<> inline PwmCh_num * const PWMTimer<3>::pwmChan()       { return PWM->PWM_CH_NUM + 3; };
     template<> inline const uint32_t    PWMTimer<3>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<3>::pwmIRQ()        { return PWM_IRQn; };
-    
+
     template<> inline Pwm * const       PWMTimer<4>::pwm()           { return PWM; };
     template<> inline PwmCh_num * const PWMTimer<4>::pwmChan()       { return PWM->PWM_CH_NUM + 4; };
     template<> inline const uint32_t    PWMTimer<4>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<4>::pwmIRQ()        { return PWM_IRQn; };
-    
+
     template<> inline Pwm * const       PWMTimer<5>::pwm()           { return PWM; };
     template<> inline PwmCh_num * const PWMTimer<5>::pwmChan()       { return PWM->PWM_CH_NUM + 5; };
     template<> inline const uint32_t    PWMTimer<5>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<5>::pwmIRQ()        { return PWM_IRQn; };
-    
+
     template<> inline Pwm * const       PWMTimer<6>::pwm()           { return PWM; };
     template<> inline PwmCh_num * const PWMTimer<6>::pwmChan()       { return PWM->PWM_CH_NUM + 6; };
     template<> inline const uint32_t    PWMTimer<6>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<6>::pwmIRQ()        { return PWM_IRQn; };
-    
+
     template<> inline Pwm * const       PWMTimer<7>::pwm()           { return PWM; };
     template<> inline PwmCh_num * const PWMTimer<7>::pwmChan()       { return PWM->PWM_CH_NUM + 7; };
     template<> inline const uint32_t    PWMTimer<7>::peripheralId()  { return ID_PWM; };
     template<> inline const IRQn_Type   PWMTimer<7>::pwmIRQ()        { return PWM_IRQn; };
-    
-    
-    
+
+
+
     template<uint8_t timerNum, uint8_t channelNum>
     struct PWMTimerChannel : PWMTimer<timerNum> {
         //Intentionally empty
     };
-    
+
     template<uint8_t timerNum>
     struct PWMTimerChannel<timerNum, 0> : PWMTimer<timerNum> {
         PWMTimerChannel() : PWMTimer<timerNum>() {};
-        
+
         /* Redundant:
          void setDutyCycle(const float ratio) {
          PWMTimer<timerNum>::setDutyCycle(ratio);
          };
-         
+
          void setExactDutyCycle(const uint32_t absolute) {
          PWMTimer<timerNum>::setExactDutyCycle(absolute);
          };
-         
+
          void setOutputOptions(const uint32_t options) {
          PWMTimer<timerNum>::setOutputOptions(options);
          };
-         
+
          void startPWMOutput() {
          PWMTimer<timerNum>::startPWMOutput();
          };
-         
+
          void stopPWMOutput() {
          PWMTimer<timerNum>::stopPWMOutput();
          }
          */
     };
-    
+
     static const timer_number SysTickTimerNum = 0xFF;
     template <>
     struct Timer<SysTickTimerNum> {
         static volatile uint32_t _motateTickCount;
-        
+
         Timer() { init(); };
         Timer(const TimerMode mode, const uint32_t freq) {
             init();
         };
-        
+
         void init() {
             _motateTickCount = 0;
-            
+
             // Set Systick to 1ms interval, common to all SAM3 variants
             if (SysTick_Config(SystemCoreClock / 1000))
             {
@@ -1008,61 +1018,62 @@ namespace Motate {
                 while (true);
             }
         };
-        
+
         // Return the current value of the counter. This is a fleeting thing...
         uint32_t getValue() {
             return _motateTickCount;
         };
-        
+
         void _increment() {
             _motateTickCount++;
         };
-        
+
         // Placeholder for user code.
         static void interrupt() __attribute__ ((weak));
     };
     extern Timer<SysTickTimerNum> SysTickTimer;
-    
+
     static const timer_number WatchDogTimerNum = 0xFE;
     template <>
     struct Timer<WatchDogTimerNum> {
-        
+
         Timer() { init(); };
         Timer(const TimerMode mode, const uint32_t freq) {
             init();
             //			setModeAndFrequency(mode, freq);
         };
-        
+
         void init() {
         };
-        
+
         void disable() {
             WDT->WDT_MR = WDT_MR_WDDIS;
         };
-        
+
         void checkIn() {
-            
+
         };
-        
+
         // Placeholder for user code.
         static void interrupt() __attribute__ ((weak));
     };
     extern Timer<WatchDogTimerNum> WatchDogTimer;
-    
+
     // Provide a Arduino-compatible blocking-delay function
     inline void delay( uint32_t microseconds )
     {
         uint32_t doneTime = SysTickTimer.getValue() + microseconds;
-        
+
         do
         {
             __NOP();
         } while ( SysTickTimer.getValue() < doneTime );
     }
-    
+
 } // namespace Motate
 
 #define MOTATE_TIMER_INTERRUPT(number) template<> void Motate::Timer<number>::interrupt()
+#define MOTATE_TIMER_CHANNEL_INTERRUPT(t, ch) template<> void Motate::TimerChannel<t, ch>::interrupt()
 
 /** THIS IS OLD INFO, AND NO LONGER RELEVANT TO THIS PROJECT, BUT IT WAS HARD TO COME BY: **/
 
@@ -1070,9 +1081,9 @@ namespace Motate {
  Ok, here we get ugly: We need the *mangled* names for the specialized interrupt functions,
  so that we can use weak references from C functions TCn_Handler to the C++ Timer<n>::interrupt(),
  so that we get clean linkage to user-provided functions, and no errors if those functions don't exist.
- 
+
  So, to get the mangled names (which will only for for GCC, btw), I do this in a bash shell (ignore any errors after the g++ line):
- 
+
  cat <<END >> temp.cpp
  #include <inttypes.h>
  namespace Motate {

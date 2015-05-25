@@ -2,8 +2,29 @@ MKDIR = mkdir -p
 
 ARCH ?= gcc-arm-none-eabi
 
-ifeq (gcc-arm-none-eabi,${ARCH})
+ifneq (,$(findstring /cygdrive/,$(PATH)))
+OS := WIN32
+else
+ifneq (,$(findstring WINDOWS,$(PATH)))
+OS := WIN32
+else
+UNAME := $(shell uname -s)
 
+ifeq (Darwin,${UNAME})
+OS = OSX
+DOWNLOAD_TOOL = curl -OL
+else
+ifeq (Linux,${UNAME})
+OS = LINUX
+DOWNLOAD_TOOL = wget
+endif #LINUX
+endif #Darwin
+
+endif #cygdrive
+endif #WINDOWS
+
+
+ifeq ($(ARCH), gcc-arm-none-eabi)
 TOOLS_SUBPATH = gcc-arm-none-eabi
 
 TOOLS_VERSION_SHORT = 4.8
@@ -12,54 +33,69 @@ TOOLS_VERSION_FILENAME = 4_8-2014q1-20140314
 TOOLS_EXPANDED_DIRNAME = gcc-arm-none-eabi-4_8-2014q1
 
 TOOLS_URL_PREFIX = https://launchpad.net/gcc-arm-embedded/${TOOLS_VERSION_SHORT}/${TOOLS_VERSION_LONG}/+download/
-TOOLS_OSX_TARBALL_FILENAME = gcc-arm-none-eabi-${TOOLS_VERSION_FILENAME}-mac.tar.bz2
-TOOLS_LINUX_TARBALL_FILENAME = gcc-arm-none-eabi-${TOOLS_VERSION_FILENAME}-linux.tar.bz2
-TOOLS_WIN32_ZIP_FILENAME = gcc-arm-none-eabi-${TOOLS_VERSION_FILENAME}-win32.zip
+TOOLS_OSX_ARCHIVE_FILENAME = gcc-arm-none-eabi-${TOOLS_VERSION_FILENAME}-mac.tar.bz2
+TOOLS_LINUX_ARCHIVE_FILENAME = gcc-arm-none-eabi-${TOOLS_VERSION_FILENAME}-linux.tar.bz2
+TOOLS_WIN32_ARCHIVE_FILENAME = gcc-arm-none-eabi-${TOOLS_VERSION_FILENAME}-win32.zip
 
-endif #ARCH=gcc-arm-none-eabi
+EXPAND_COMMAND = tar xjf
+
+TEST_COMMAND=arm-none-eabi-gcc
+
+endif #eq ($(ARCH), 'gcc-arm-none-eabi')
 
 
-ifneq (,$(findstring /cygdrive/,$(PATH)))
 
-OS := WIN32
+ifeq ($(ARCH), gcc-avr)
+TOOLS_SUBPATH = gcc-avr
 
-else
+TOOLS_VERSION = 4.8.1-arduino3
+TOOLS_EXPANDED_DIRNAME = avr
 
-	ifneq (,$(findstring WINDOWS,$(PATH)))
-OS := WIN32
+#http://arduino.cc/download.php?f=/tools/avr-gcc-4.8.1-arduino3-i386-apple-darwin11.tar.bz2
+TOOLS_URL_PREFIX = http://arduino.cc/download.php?f=/tools/
 
-	else
-UNAME := $(shell uname -s)
+TOOLS_OSX_ARCHIVE_FILENAME = avr-gcc-${TOOLS_VERSION}-i386-apple-darwin11.tar.bz2
+EXPAND_COMMAND_OSX = tar xzvf
 
-		ifeq (Darwin,${UNAME})
+TOOLS_LINUX_ARCHIVE_FILENAME = avr-${TOOLS_VERSION}-x86_64-pc-linux-gnu.tar.bz2
+EXPAND_COMMAND_LINUX = tar xzvf
 
-OS = OSX
-DOWNLOAD_TOOL = curl -O
+TOOLS_WIN32_ARCHIVE_FILENAME = avr-${TOOLS_VERSION}-i686-mingw32.zip
+EXPAND_COMMAND_WIN32 = unzip -d ${TOOLS_EXPANDED_DIRNAME}
 
-		else
-			ifeq (Linux,${UNAME})
-OS = LINUX
-DOWNLOAD_TOOL = wget
-			endif #LINUX
-		endif #Darwin
-	endif #WINDOWS
-endif #cygdrive
+EXPAND_COMMAND = ${EXPAND_COMMAND_${OS}}
 
-all: ${TOOLS_SUBPATH}
+TEST_COMMAND=avr-gcc
+
+endif #eq ($(ARCH), 'gcc-arm-none-eabi')
+
+
+
+ifeq ($(shell PATH=$(TOOLS_SUBPATH)/bin/:${PATH} command -v $(TEST_COMMAND) >/dev/null 2>&1 || echo "yes"), yes)
+TOOLS_SUBPATH_IF_NEEDED = $(TOOLS_SUBPATH)
+endif
+
+
+all: TOOLS_INSTALLED
+
+.PHONY:
+TOOLS_INSTALLED: ${TOOLS_SUBPATH_IF_NEEDED}
+
 
 .ONESHELL:
 ${TOOLS_SUBPATH}: ${TOOLS_EXPANDED_DIRNAME}
-	ln -s ${TOOLS_EXPANDED_DIRNAME} ${TOOLS_SUBPATH}
+	ln -s "${TOOLS_EXPANDED_DIRNAME}" "${TOOLS_SUBPATH}"
 
-${TOOLS_EXPANDED_DIRNAME}: ${TOOLS_${OS}_TARBALL_FILENAME}
-	tar xjf ${TOOLS_${OS}_TARBALL_FILENAME}
+${TOOLS_EXPANDED_DIRNAME}: ${TOOLS_${OS}_ARCHIVE_FILENAME}
+	${EXPAND_COMMAND} "${TOOLS_${OS}_ARCHIVE_FILENAME}"
 
-${TOOLS_${OS}_TARBALL_FILENAME}:
-	${DOWNLOAD_TOOL} ${TOOLS_URL_PREFIX}${TOOLS_${OS}_TARBALL_FILENAME}
-	
+${TOOLS_${OS}_ARCHIVE_FILENAME}:
+	$(info The $(ARCH) tools need installed. Downloading and installing now.)
+	${DOWNLOAD_TOOL} "${TOOLS_URL_PREFIX}${TOOLS_${OS}_ARCHIVE_FILENAME}"
+
 .PHONY: clean
 
 clean:
 	rm -rf ${TOOLS_EXPANDED_DIRNAME}
-	rm ${TOOLS_${OS}_TARBALL_FILENAME}
+	rm ${TOOLS_${OS}_ARCHIVE_FILENAME}
 	rm ${TOOLS_SUBPATH}
